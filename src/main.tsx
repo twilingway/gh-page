@@ -19,7 +19,7 @@ const router = createBrowserRouter(
     { path: "*", element: <>404</> }, // Обработка 404
   ],
   {
-    basename: process.env.NODE_ENV === "production" ? "/gh-page" : "/", // Укажите название репозитория
+    basename: process.env.NODE_ENV === "production" ? "/gh-page/" : "/", // Укажите название репозитория
   }
 );
 
