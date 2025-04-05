@@ -3,9 +3,9 @@
 <html>
   <head>
     <script>
-      // Сохраняем текущий путь
-      sessionStorage.redirect = location.pathname;
-      // Редирект на главную страницу приложения
+      // Сохраняем полный путь (например, /gh-page/about?param=1)
+      sessionStorage.redirect = location.pathname + location.search;
+      // Редиректим на корень приложения
       location.replace("/gh-page/");
     </script>
   </head>
